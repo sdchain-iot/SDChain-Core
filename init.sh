@@ -6,8 +6,9 @@ sudo apt-get -y install aptitude
 sudo apt-get -y install libstdc++6
 
 git clone https://github.com/SDChain/SDChain-Core.git
+cd SDChain-Core
 git checkout `git rev-list -n 1 --before="2018-10-10" master`
-cd SDChain-Core/bin
+cd bin
 tar xvzf sdchaind-v0.3.7.tar.gz
 cd sdchaind-v0.3.7
 
