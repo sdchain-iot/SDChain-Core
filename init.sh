@@ -12,9 +12,9 @@ cd bin
 tar xvzf sdchaind-v0.3.7.tar.gz
 cd sdchaind-v0.3.7
 
-chmod +x libprotobuf.so.8
+chmod 755 libprotobuf.so.8
 sudo cp libprotobuf.so.8 /usr/lib/x86_64-linux-gnu/libprotobuf.so.8
-chmod +x sdchaind
+chmod 755 sdchaind
 cp ../SDChain-core.cfg ./SDChain-core.cfg
 cp ../validators.txt ./validators.txt
 ./sdchaind
